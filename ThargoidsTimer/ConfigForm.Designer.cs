@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace ThargoidsTimer
+﻿namespace ThargoidsTimer
 {
     partial class ConfigForm
     {

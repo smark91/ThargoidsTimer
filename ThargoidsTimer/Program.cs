@@ -41,7 +41,7 @@ namespace ThargoidsTimer
             basiliskVariant = new ThargoidsVariant("Basilisk", 420, 180);
             medusaVariant = new ThargoidsVariant("Medusa", 420, 240);
             hydraVariant = new ThargoidsVariant("Hydra", 480, 320);
-            
+
 
             currentVariant = cyclopsVariant;
 
@@ -52,20 +52,21 @@ namespace ThargoidsTimer
 
         private static void UserActivityHook_KeyUp(object sender, KeyEventArgs e)
         {
-            if(registerStartKeybind)
+            if (registerStartKeybind)
             {
                 startKeystroke = e.KeyData.ToString();
                 registerStartKeybind = false;
                 configForm.ChangeStartTimerKeybindLabel(startKeystroke);
                 return;
-            } else if (registerStopKeybind)
+            }
+            else if (registerStopKeybind)
             {
                 stopKeystroke = e.KeyData.ToString();
                 registerStopKeybind = false;
-                configForm.ChangeStopTimerKeybindLabel(stopKeystroke); 
+                configForm.ChangeStopTimerKeybindLabel(stopKeystroke);
                 return;
             }
-            if(e.KeyData.ToString() == startKeystroke)
+            if (e.KeyData.ToString() == startKeystroke)
             {
                 overlayForm.Timers_Start();
                 Console.WriteLine("Play");
@@ -85,7 +86,7 @@ namespace ThargoidsTimer
             overlayForm.ShieldTimer_Set(currentVariant.ShieldSeconds);
         }
     }
-    
+
     public class EliteButton : Button
     {
         protected override void OnMouseEnter(EventArgs e)

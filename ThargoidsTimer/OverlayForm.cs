@@ -9,9 +9,7 @@ namespace ThargoidsTimer
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
-
-
-
+        
         public OverlayForm()
         {
             InitializeComponent();
@@ -49,7 +47,7 @@ namespace ThargoidsTimer
 
         private void EnrageTimer_Tick(object sender, EventArgs e)
         {
-            if(enrageTimeSpan.TotalSeconds <= 0)
+            if (enrageTimeSpan.TotalSeconds <= 0)
             {
                 enrageTimer.Stop();
                 return;
@@ -139,11 +137,6 @@ namespace ThargoidsTimer
         private void stopButton_Click(object sender, EventArgs e)
         {
             Timers_Stop();
-        }
-
-        private void playButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

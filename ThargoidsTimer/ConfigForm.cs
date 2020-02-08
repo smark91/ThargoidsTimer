@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ThargoidsTimer
@@ -31,7 +25,7 @@ namespace ThargoidsTimer
             {
                 hydraVariantRadioButton.Select();
             }
-            
+
             ChangeStartTimerKeybindLabel(Program.startKeystroke);
             ChangeStopTimerKeybindLabel(Program.stopKeystroke);
         }
@@ -40,7 +34,7 @@ namespace ThargoidsTimer
         {
             StartTimerKeybindButton.Text = text;
         }
-        
+
         public void ChangeStopTimerKeybindLabel(string text)
         {
             StopTimerKeybindButton.Text = text;
@@ -62,10 +56,10 @@ namespace ThargoidsTimer
             StopTimerKeybindButton.Text = "Press a key...";
             Program.registerStopKeybind = true;
         }
-        
+
         private void cyclopsVariantRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if((sender as VariantRadioButton).Checked) Program.ChangeVariant(Program.cyclopsVariant);
+            if ((sender as VariantRadioButton).Checked) Program.ChangeVariant(Program.cyclopsVariant);
         }
 
         private void basiliskVariantRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -104,8 +98,8 @@ namespace ThargoidsTimer
             }
         }
 
-        
+
     }
 
-    
+
 }

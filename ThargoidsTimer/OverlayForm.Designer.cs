@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Drawing;
-using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace ThargoidsTimer
@@ -58,6 +55,9 @@ namespace ThargoidsTimer
             this.enrageLabel.Size = new System.Drawing.Size(115, 30);
             this.enrageLabel.TabIndex = 0;
             this.enrageLabel.Text = "ENRAGE";
+            this.enrageLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseDown);
+            this.enrageLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseMove);
+            this.enrageLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseUp);
             // 
             // enrageTimerLabel
             // 
@@ -69,6 +69,9 @@ namespace ThargoidsTimer
             this.enrageTimerLabel.TabIndex = 1;
             this.enrageTimerLabel.Text = "00:00";
             this.enrageTimerLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.enrageTimerLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseDown);
+            this.enrageTimerLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseMove);
+            this.enrageTimerLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseUp);
             // 
             // shieldTimerLabel
             // 
@@ -80,6 +83,9 @@ namespace ThargoidsTimer
             this.shieldTimerLabel.TabIndex = 2;
             this.shieldTimerLabel.Text = "00:00";
             this.shieldTimerLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.shieldTimerLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseDown);
+            this.shieldTimerLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseMove);
+            this.shieldTimerLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseUp);
             // 
             // shieldLabel
             // 
@@ -91,6 +97,9 @@ namespace ThargoidsTimer
             this.shieldLabel.TabIndex = 3;
             this.shieldLabel.Text = "SHIELD";
             this.shieldLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.shieldLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseDown);
+            this.shieldLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseMove);
+            this.shieldLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseUp);
             // 
             // enrageTimer
             // 
@@ -112,6 +121,9 @@ namespace ThargoidsTimer
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Size = new System.Drawing.Size(455, 54);
             this.buttonPanel.TabIndex = 8;
+            this.buttonPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseDown);
+            this.buttonPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseMove);
+            this.buttonPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OverlayForm_MouseUp);
             // 
             // startButton
             // 
