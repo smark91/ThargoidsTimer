@@ -1,4 +1,4 @@
-# ThargoidsTimer
+# Thargoids Timer
 Overlay UI:
 
 ![Overlay UI](Screenshot/OverlayScreenshot.png?raw=true "Overlay UI")
