@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Deployment.Application;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -9,6 +10,10 @@ namespace ThargoidsTimer
         public ConfigForm()
         {
             InitializeComponent();
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                versionLabel.Text = string.Format("v{0}", ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString(4));
+            }
             if (Program.currentVariant == Program.cyclopsVariant)
             {
                 cyclopsVariantRadioButton.Select();
@@ -97,9 +102,5 @@ namespace ThargoidsTimer
                 base.OnMouseLeave(e);
             }
         }
-
-
     }
-
-
 }

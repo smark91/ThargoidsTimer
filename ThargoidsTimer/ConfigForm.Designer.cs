@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.versionLabel = new System.Windows.Forms.Label();
             this.StopTimerKeybindButton = new ThargoidsTimer.EliteButton();
             this.StartTimerKeybindButton = new ThargoidsTimer.EliteButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.versionLabel);
             this.panel1.Controls.Add(this.StopTimerKeybindButton);
             this.panel1.Controls.Add(this.StartTimerKeybindButton);
             this.panel1.Controls.Add(this.label3);
@@ -62,6 +64,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 366);
             this.panel1.TabIndex = 0;
+            // 
+            // versionLabel
+            // 
+            this.versionLabel.AutoSize = true;
+            this.versionLabel.BackColor = System.Drawing.SystemColors.ControlText;
+            this.versionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.versionLabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.versionLabel.Location = new System.Drawing.Point(479, 342);
+            this.versionLabel.Name = "versionLabel";
+            this.versionLabel.Size = new System.Drawing.Size(57, 20);
+            this.versionLabel.TabIndex = 12;
+            this.versionLabel.Text = "v1.0.1";
+            this.versionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // StopTimerKeybindButton
             // 
@@ -272,5 +287,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label KeybindLabel;
+        private System.Windows.Forms.Label versionLabel;
     }
 }
