@@ -71,7 +71,7 @@
             this.versionLabel.BackColor = System.Drawing.SystemColors.ControlText;
             this.versionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.versionLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.versionLabel.Location = new System.Drawing.Point(479, 342);
+            this.versionLabel.Location = new System.Drawing.Point(3, 342);
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(57, 20);
             this.versionLabel.TabIndex = 12;
