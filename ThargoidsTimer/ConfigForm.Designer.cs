@@ -73,9 +73,9 @@
             this.versionLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.versionLabel.Location = new System.Drawing.Point(3, 342);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(57, 20);
+            this.versionLabel.Size = new System.Drawing.Size(111, 20);
             this.versionLabel.TabIndex = 12;
-            this.versionLabel.Text = "v1.0.1";
+            this.versionLabel.Text = "Debug Mode";
             this.versionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // StopTimerKeybindButton

@@ -10,10 +10,9 @@ namespace ThargoidsTimer
         public ConfigForm()
         {
             InitializeComponent();
-            if (ApplicationDeployment.IsNetworkDeployed)
-            {
-                versionLabel.Text = string.Format("v{0}", ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString(4));
-            }
+
+            versionLabel.Text = string.Format("v{0}", Program.version.ToString(3));
+
             if (Program.currentVariant == Program.cyclopsVariant)
             {
                 cyclopsVariantRadioButton.Select();

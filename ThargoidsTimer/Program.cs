@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Deployment.Application;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -21,6 +22,8 @@ namespace ThargoidsTimer
         public static OverlayForm overlayForm;
         public static ConfigForm configForm;
 
+        public static Version version;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -29,6 +32,11 @@ namespace ThargoidsTimer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                version = ApplicationDeployment.CurrentDeployment.CurrentVersion;
+            }
 
             userActivityHook = new UserActivityHook(false, true);
             userActivityHook.KeyUp += new KeyEventHandler(UserActivityHook_KeyUp);
